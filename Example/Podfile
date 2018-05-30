@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AMCodeView_Tests' do
+  pod 'AMCodeView', :path => '../'
+  
+  
+end
