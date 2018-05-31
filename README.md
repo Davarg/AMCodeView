@@ -11,6 +11,23 @@
 ## Requirements
 iOS >= 10
 
+## Using
+1. Create view: 
+```objective-c
+AMCodeView *view = [[AMCodeView alloc] init];
+```
+2. Configure it:
+```objective-c
+AMCodeViewConfiguration *config = [AMCodeViewConfiguration defaultConfig];
+config.isUnderlineFilled = YES;
+[view configure:config];
+```
+3. Start responder: 
+```objective-c
+AMCodeViewResponder *responder = [[AMCodeViewResponder alloc] initWithConfig:config viewResponsible:view];
+responder.delegate = self;
+```
+
 ## Installation
 
 AMCodeView is available through [CocoaPods](https://cocoapods.org). To install
