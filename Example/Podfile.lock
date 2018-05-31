@@ -1,0 +1,19 @@
+PODS:
+  - AMCodeView (0.1.0):
+    - Masonry (~> 1.1)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - AMCodeView (from `../`)
+
+EXTERNAL SOURCES:
+  AMCodeView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMCodeView: 5c3e1e5512b66f5809f5544d8255a91e434d1c59
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 64f71edd36497ae9d3773f5eb92de18c0bd76c8d
+
+COCOAPODS: 1.4.0

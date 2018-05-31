@@ -1,0 +1,6 @@
+framework module AMCodeView {
+  umbrella header "AMCodeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

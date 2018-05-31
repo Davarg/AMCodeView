@@ -1,0 +1,28 @@
+{
+  "name": "AMCodeView",
+  "version": "0.1.0",
+  "summary": "Simple view for input login code",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Davarg/AMCodeView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Davarg": "maka-dava@yandex.ru"
+  },
+  "source": {
+    "git": "https://github.com/Davarg/AMCodeView.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/Underbridgins",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AMCodeView/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+      "~> 1.1"
+    ]
+  }
+}
