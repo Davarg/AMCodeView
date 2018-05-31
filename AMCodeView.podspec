@@ -22,7 +22,7 @@ Configurable view for input login code
                        DESC
 
   s.homepage         = 'https://github.com/Davarg/AMCodeView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots      = 'https://raw.githubusercontent.com/Davarg/ReadmeFiles/0ca443d49f92a2e1d9bc302fed878fb59f4adbd9/AMCodeView/first.png', 'https://raw.githubusercontent.com/Davarg/ReadmeFiles/0ca443d49f92a2e1d9bc302fed878fb59f4adbd9/AMCodeView/second.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Davarg' => 'maka-dava@yandex.ru' }
   s.source           = { :git => 'https://github.com/Davarg/AMCodeView.git', :tag => s.version.to_s }
