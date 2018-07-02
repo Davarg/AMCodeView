@@ -29,13 +29,32 @@
     self.code = @"";
     self.view.textField.delegate = self;
     
+    [self.view.textField addTarget:self
+                            action:@selector(onAllEditingEvents:)
+                  forControlEvents:UIControlEventAllEditingEvents];
+    
     return self;
+}
+
+- (void)dealloc {
+    [self.view.textField removeTarget:self
+                               action:@selector(onAllEditingEvents:)
+                     forControlEvents:UIControlEventAllEditingEvents];
+}
+
+#pragma mark - UITextField Notifications
+
+- (void)onAllEditingEvents:(UITextField *)textField {
+    if ([self isStringEmpty:self.code] == NO
+        && [self isStringEmpty:textField.text] == YES) {
+        self.code = @"";
+    }
 }
 
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    BOOL result = NO;
+    BOOL result = YES;
     BOOL isStringEmpty = [self isStringEmpty:string];
     
     if (self.code.length < self.config.maxCodeLength
@@ -44,7 +63,6 @@
         [mString replaceCharactersInRange:range withString:string];
         
         self.code = mString;
-        textField.text = self.code;
         
         if (isStringEmpty == NO) {
             self.lastCursorIndex = self.code.length > 0 ? self.code.length - 1 : 0;

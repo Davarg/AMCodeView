@@ -13,6 +13,7 @@
 @property (strong, nonatomic) UITextField *textField;
 @property (strong, nonatomic) NSArray<UILabel*> *digitLabels;
 
+- (void)dropCode;
 - (void)moveCursorToStart;
 - (void)moveCursorForward;
 - (void)moveCursorBackward;

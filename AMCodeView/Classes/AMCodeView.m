@@ -150,6 +150,16 @@
 
 #pragma mark - CodeViewResponsible
 
+- (void)dropCode {
+    self.textField.text = @"";
+    
+    for (UILabel *digit in self.digitLabels) {
+        digit.text = @"";
+    }
+    
+    [self moveCursorToStart];
+}
+
 - (void)moveCursorToStart {
     if (self.configuration.isUnderlineFilled == YES) {
         [UIView animateWithDuration:self.configuration.animDuration
