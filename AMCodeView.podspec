@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMCodeView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple view for input login code'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Configurable view for input login code
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'AMCodeView/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'AMCodeView' => ['AMCodeView/Assets/*.png']
   # }
