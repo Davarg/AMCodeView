@@ -78,6 +78,7 @@
     }
     
     if (self.code.length == self.config.maxCodeLength) {
+        textField.text = self.code;
         [textField resignFirstResponder];
     }
     
